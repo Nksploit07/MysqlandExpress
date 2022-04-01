@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "e40a8218-6aca-47bf-a99e-afeaeac77c22",
+		"name": "Mysql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert to employe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"insert\",\r\n    \"table\":\"employee\",\r\n    \"empid\":5,\r\n    \"empname\":\"vicky\",\r\n    \"empdes\":\"backend dev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert to salarytb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"insert\",\r\n    \"table\":\"salarytb\",\r\n    \"empid\":2,\r\n    \"name\":\"vishwa\",\r\n    \"sid\":2,\r\n    \"salary\":250000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get from employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"get\",\r\n    \"table\":\"employee\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get from salarytb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"get\",\r\n    \"table\":\"salarytb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get item by id from employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"getbyid\",\r\n    \"table\":\"employee\",\r\n    \"empid\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get item by id salarytb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"getbyid\",\r\n    \"table\":\"salarytb\",\r\n    \"sid\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete operation on employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"delete\",\r\n    \"table\":\"employee\",\r\n    \"empid\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete operation on salary",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"delete\",\r\n    \"table\":\"salary\",\r\n    \"sid\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update in employee",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"update\",\r\n    \"table\":\"employee\",\r\n    \"item\":\"empdes\",\r\n    \"itemvalue\":\"backend dev\",\r\n    \"empid\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update in salarytb",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"update\",\r\n    \"table\":\"salarytb\",\r\n    \"item\":\"salary\",\r\n    \"itemvalue\":25000,\r\n    \"empid\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://06l78datsf.execute-api.ap-south-1.amazonaws.com/Prod/rdslambda",
+					"protocol": "https",
+					"host": [
+						"06l78datsf",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"rdslambda"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
